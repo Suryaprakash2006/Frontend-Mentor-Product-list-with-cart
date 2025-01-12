@@ -1,0 +1,118 @@
+.product_list {
+  width: 65vw;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.products_display {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  gap: 30px;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+}
+#Desserts {
+  color: hsl(14, 65%, 9%);
+  margin: 0;
+  font-weight: 700;
+  font-size: 40px;
+}
+#p_image {
+  width: 100%;
+  border-radius: 10px;
+}
+#p_catgory {
+  margin: 0;
+  color: hsl(7, 20%, 60%);
+  font-size: 13px;
+}
+#p_name {
+  font-weight: 600;
+  margin: 0;
+  color: hsl(14, 65%, 9%);
+  font-size: 16px;
+}
+#p_price {
+  margin: 0;
+  color: hsl(14, 86%, 42%);
+  font-size: 16px;
+  font-weight: 600;
+}
+#img_butn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+.button_area {
+  background-color: hsl(13, 31%, 94%);
+  width: 50%;
+  border: 1px solid hsl(7, 20%, 60%);
+  border-radius: 50px;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -17px;
+}
+#cart_svg {
+  padding-top: 5px;
+}
+#p_button {
+  border: none;
+  color: hsl(14, 65%, 9%);
+  font-size: 13px;
+  font-weight: 600;
+}
+#p_button:hover {
+  color: hsl(14, 86%, 42%);
+}
+
+@media (min-width: 1110px) and (max-width: 1300px) {
+  #p_button {
+    font-size: 11px;
+  }
+  #p_name , #p_price{
+    font-size: 13px;
+  } 
+  #p_catgory {
+    font-size: 11px;
+  }
+  #Desserts{
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1110px){
+  .product_list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  #p_button {
+    font-size: 9px;
+  }
+  #p_catgory {
+    font-size: 10px;
+  }
+}
+@media (max-width: 700px){
+  .products_display {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .product_list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+}

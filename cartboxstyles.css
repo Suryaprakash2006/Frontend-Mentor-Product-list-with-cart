@@ -1,0 +1,225 @@
+.cartbox {
+  width: 35vw;
+  background-color: hsl(20, 50%, 98%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+}
+#cart_heading {
+  color: hsl(14, 86%, 42%);
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  background-color: hsl(20, 50%, 98%);
+  margin: 20px 20px 0px 20px;
+}
+#empty_para {
+  color: hsl(12, 20%, 44%);
+  font-weight: 600;
+  font-size: 16px;
+  background-color: hsl(20, 50%, 98%);
+  text-align: center;
+  margin: 20px 20px 40px 20px;
+}
+#cart_empty_svg {
+  margin: 50px 20px 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart-item {
+  width: 90%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 20px 20px 0px 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid hsl(13, 31%, 94%);
+}
+.item_data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+#item_name {
+  margin: 0;
+  color: hsl(14, 65%, 9%);
+  font-weight: 600;
+  font-size: 16px;
+}
+.pricing_details {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 16px;
+}
+#quantityX {
+  color: hsl(14, 86%, 42%);
+  font-weight: 600;
+  padding-right: 8px;
+}
+#price {
+  color: hsl(7, 20%, 60%);
+  font-weight: 400;
+  word-spacing: -2px;
+}
+#total_of_item {
+  color: hsl(12, 20%, 44%);
+  font-weight: 600;
+}
+.cancel_button_div {
+  height: 51.6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cancel_button {
+  border: 2px solid hsl(7, 20%, 60%);
+  border-radius: 50%;
+  padding-top: 4px;
+  padding-bottom: 0px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.cancel_button svg {
+  width: 13px;
+  height: 13px;
+}
+.cancel_button:hover {
+  border: 2px solid hsl(14, 65%, 9%);
+}
+.cancel_button:hover path {
+  fill: hsl(14, 65%, 9%);
+}
+.bill {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.total_bill {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0px 30px 0px;
+}
+#order_total {
+  color: hsl(14, 65%, 9%);
+  font-weight: 400;
+  font-size: 16px;
+}
+#final_bill {
+  color: hsl(14, 65%, 9%);
+  font-weight: 900;
+  font-size: 27px;
+  word-spacing: -7px;
+  letter-spacing: 2px;
+}
+.carbon_neutral {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: hsl(13, 31%, 94%);
+  border-radius: 10px;
+  padding: 15px 0px;
+}
+#carbon_text {
+  margin: 0;
+  color: hsl(14, 65%, 9%);
+  font-size: 16px;
+}
+#confirmOrder {
+  width: 100%;
+  margin: 30px 0px 10px 0px;
+  border: none;
+  background-color: hsl(14, 86%, 42%);
+  color: hsl(20, 50%, 98%);
+  padding: 15px 0px;
+  border-radius: 100px;
+  font-size: 16px;
+}
+@media (min-width: 1110px) and (max-width: 1400px) {
+  #cart_heading {
+    font-size: 25px;
+  }
+  .cart-item {
+    padding-bottom: 5px;
+    margin-top: 15px;
+  }
+  #empty_para {
+    font-size: 13px;
+  }
+  #item_name {
+    font-size: 13px;
+  }
+  .pricing_details {
+    font-size: 13px;
+  }
+  #quantityX {
+    font-weight: 400;
+  }
+  #total_of_item {
+    font-weight: 400;
+  }
+  .cancel_button {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  .cancel_button svg {
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cancel_button:hover {
+    border: 2px solid hsl(14, 65%, 9%);
+  }
+  .cancel_button:hover path {
+    fill: hsl(14, 65%, 9%);
+  }
+  #order_total {
+    font-size: 13px;
+  }
+  #final_bill {
+    font-size: 23px;
+  }
+  #carbon_text {
+    font-size: 13px;
+  }
+  #confirmOrder {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 11px;
+  }
+  .total_bill {
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+}
+@media (min-width: 700px) and (max-width: 1110px){
+  .cartbox {
+    width: 80%;
+  }
+  #cart_heading {
+    font-size: 20px;
+  }
+}
+@media (max-width: 700px){
+  .cartbox {
+    width: 100%;
+  }
+  #cart_heading {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,92 @@
+
+.clicked{
+    width: 40%;
+    background-color: hsl(14, 86%, 42%);
+  border-radius: 50px;
+  padding: 10px 15px;
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: -17px;   
+}
+.decrement{
+    background-color:hsl(14, 86%, 42%) ;
+    border-radius: 50%;
+    border: 2px solid hsl(13, 31%, 94%);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 4px;
+    padding-right: 4px;
+    cursor: pointer;
+    display: flex;            /* Use Flexbox */
+    justify-content: center;  /* Center horizontally */
+    align-items: center; 
+}
+.dec_svg{
+    width: 7px;
+    fill: hsl(13, 31%, 94%);
+    background-color: hsl(13, 31%, 94%);
+    padding: 0px 0px 0px 0px;
+    height: 1px;
+}
+.dec_path{
+    fill: hsl(13, 31%, 94%);
+}
+.decrement:hover {
+    background-color:hsl(13, 31%, 94%);
+    border: none;
+    border: 2px solid hsl(13, 31%, 94%);
+}
+.decrement:hover svg {
+    background-color: hsl(14, 86%, 42%);
+    fill: hsl(14, 86%, 42%);
+}
+.decrement:hover svg path{
+    background-color: hsl(14, 86%, 42%);
+    fill: hsl(14, 86%, 42%);
+}
+.increment{
+    background-color:hsl(14, 86%, 42%) ;
+    border-radius: 50%;
+    border: 2px solid hsl(13, 31%, 94%);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+    cursor: pointer;
+    display: flex;            /* Use Flexbox */
+    justify-content: center;  /* Center horizontally */
+    align-items: center; 
+}
+.inc_svg{
+    width: 8px;
+    fill: hsl(13, 31%, 94%);
+    background-color: hsl(14, 86%, 42%);
+    padding: 0px 0px 0px 0px;
+}
+.inc_path{
+    fill: hsl(13, 31%, 94%);
+}
+.increment:hover {
+    background-color:hsl(13, 31%, 94%);
+    border: none;
+    border: 2px solid hsl(13, 31%, 94%);
+}
+.increment:hover svg {
+    background-color: hsl(13, 31%, 94%);
+    fill: hsl(13, 31%, 94%);
+}
+.increment:hover svg path{
+    background-color: hsl(13, 31%, 94%);
+    fill: hsl(14, 86%, 42%);
+}
+.number{
+    background-color:hsl(14, 86%, 42%);
+    color: hsl(13, 31%, 94%);
+    font-size: 13px;
+}
+.add_border{
+    border: 3px solid hsl(14, 86%, 42%);
+}
