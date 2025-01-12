@@ -148,6 +148,10 @@
   .order_confirmed {
     width: 100vw;
     max-height: 80vh;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
   }
   .overlay {
     align-items: flex-end;
